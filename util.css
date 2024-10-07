@@ -1,0 +1,71 @@
+/* 容器属性类 */
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* 项目属性类 */
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+.flex-basis-50 {
+    flex-basis: 50%;
+}
+.align-self-start {
+    align-self: flex-start;
+}
+.align-self-end {
+    align-self: flex-end;
+}
+.align-self-center {
+    align-self: center;
+}
+/* 字体和文本相关 */
+.text-12px {
+    font-size: 12px;
+}
+.text-14px {
+    font-size: 14px;
+}
+.text-16px {
+    font-size: 16px;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-italic {
+    font-style: italic;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.pd-h-20{
+    padding:0 20px;
+}

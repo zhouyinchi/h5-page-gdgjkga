@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="util.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./lingjia_files/style.css" />
+    <link rel="stylesheet" href="./lingjia_files/materialize.css" />
+    <style>
+      body {
+        background-color: black;
+      }
+      .page-bg {
+        background-image: url("assets/header-bg2.jpg");
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+      }
+      .top-banner {
+        background-image: url("assets/banner_btn.png");
+        background-size: 100% auto;
+        height: 20px;
+      }
+      .container {
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        padding: 30px;
+      }
+      .circle-image-container {
+        width: 50px; /* 或者你想要的任何尺寸 */
+        height: 50px; /* 和宽度相同 */
+        backdrop-filter: blur(2px);
+        border-radius: 50%; /* 使得容器变成圆形 */
+        overflow: hidden; /* 隐藏溢出的图片部分 */
+        /*  display: flex;*/
+        align-items: center;
+        justify-content: center;
+      }
+
+      .circle-image {
+        max-width: 100%; /* 确保图片不会比容器大 */
+        max-height: 100%; /* 同上 */
+      }
+      .circle-image-container {
+        display: none !important;
+      }
+
+      .file-word {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: STXinwei;
+        color: rgb(239, 189, 38);
+      }
+    </style>
+  </head>
+  <body class="page-bg">
+    <div class="pd-h-20" style="position: absolute; bottom: 1rem; width: 100%">
+      <div class="menu segments">
+        <div class="container">
+          <div class="row">
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Bazi">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/bazi.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">八字精算</span>
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Ziwei">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/ziwei.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">紫薇排盘</span>
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Weilai">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/weilai.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">未来运势</span>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Love">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/hunyin.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">婚姻测算</span>
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Zhengyuan">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/zhengyuan.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">正缘画像</span>
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Zhouyi">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/liuyao.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">六 爻</span>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Shouxiang">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/shouxiang.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">手相分析</span>
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Mianxiang">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/mianxiang.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">面相分析</span>
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Lingqian">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/lingqian.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">灵 签</span>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s4">
+              <a href="http://www.lingjiange.com/Home/Zhiwen">
+                <div class="icon">
+                  <img
+                    src="./lingjia_files/zw.jpg"
+                    class="circle-image-container"
+                  />
+                </div>
+                <span class="file-word">指纹占卜</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
