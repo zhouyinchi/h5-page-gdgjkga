@@ -6,83 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link href="util.css" rel="stylesheet" />
-  <style>
-    body {
-      background-color: black;
-      padding: 0;
-      margin: 0;
-    }
-
-    .page-bg {
-      background-image: url("assets2/header-bg.jpeg");
-      margin: 0;
-      padding: 0;
-      height: 90vh;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%
-    }
-
-    .page-bottom-bg {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      height: 40vh;
-      bottom: 0;
-      background-image: url("assets2/bottom-bg.png");
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      pointer-events: none;
-    }
-
-
-
-    .item-container {
-      position: absolute;
-      bottom: 20px;
-      height: 30vh;
-      width: 100%;
-      position: fixed;
-      bottom: 2rem;
-      z-index: 100;
-      overflow: hidden;
-    }
-
-    .item-container span {
-      width: 70vw;
-      height:47vw;
-      background-image: url(assets2/item-bg.jpeg);
-      background-size: 100%;
-      /* margin: auto 15vw; */
-      line-height: 100%;
-      font-size: 2rem;
-      font-weight: 500;
-      border-radius: 0.5rem;
-      box-shadow: 2px 1px 1px black;
-      flex: 0 0 auto;
-      cursor: pointer;
-      display: FLEX;
-      align-items: center;
-      justify-content: center;
-      transform: translateX(15vw);
-    }
-
-
-    .item-wrapper {
-      display: flex;
-      gap:30vw;
-      transition: transform 0.3s ease;
-    }
-  </style>
 </head>
 
 <body>
   <div class="root">
-
     <div class="page-bg"></div>
     <div class="page-bottom-bg"></div>
     <div class="item-container" id="itemContainer">
@@ -110,7 +37,7 @@
       let currentIndex = 0;
 
       function showItem(index) {
-        wrapper.style.transform = `translateX(-${index * 100}vw)`;
+        wrapper.style.transform = `translateX(-min(${index * 100}vw,index * 409 px))`;
         currentIndex = index;
       }
 
