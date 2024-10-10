@@ -7,73 +7,16 @@
   <title>Document</title>
   <link href="util.css" rel="stylesheet" />
   <style>
-    body {
-      background-color: black;
-      padding: 0;
-      margin: 0;
-    }
-
-    .page-bg {
-      background-image: url("assets2/header-bg.jpeg");
-      margin: 0;
-      padding: 0;
-      height: 90vh;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%
-    }
-
-    .page-bottom-bg {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      height: 40vh;
-      bottom: 0;
-      background-image: url("assets2/bottom-bg.png");
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      pointer-events: none;
-    }
-
-
-
-    .item-container {
+     .item-container {
       position: absolute;
       scale:0.5;
-      bottom: 20px;
       height: 30vh;
       width: 100%;
-      position: fixed;
       top: -2rem;
       z-index: 100;
       overflow: hidden;
     }
-
-    .item-container span {
-      width: 70vw;
-      height:47vw;
-      background-image: url(assets2/item-bg.jpeg);
-      background-size: 100%;
-      /* margin: auto 15vw; */
-      line-height: 100%;
-      font-size: 2rem;
-      font-weight: 500;
-      border-radius: 0.5rem;
-      box-shadow: 2px 1px 1px black;
-      flex: 0 0 auto;
-      cursor: pointer;
-      display: FLEX;
-      align-items: center;
-      justify-content: center;
-      transform: translateX(15vw);
-    }
-
-
-    .item-wrapper {
+       .item-wrapper {
       display: flex;
       gap:30vw;
       transition: transform 0.3s ease;
@@ -82,9 +25,9 @@
     .form-container{
       box-sizing: border-box;
       overflow: auto;
-      width:90vw;
+      width:90%;
       height:55vh;
-      transform:translateX(5vw);
+      transform:translateX(5%);
       position: absolute;
       bottom:2rem;
       margin:auto;
@@ -122,46 +65,7 @@
     </div>
   </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const container = document.getElementById('itemContainer');
-      const wrapper = container.querySelector('.item-wrapper');
-      const items = wrapper.querySelectorAll('.file-word');
-      let currentIndex = 0;
-
-      function showItem(index) {
-        wrapper.style.transform = `translateX(-${index * 100}vw)`;
-        currentIndex = index;
-      }
-
-      items.forEach((item, index) => {
-        item.addEventListener('click', () => {
-          showItem(index);
-        });
-      });
-
-      // 添加触摸滑动功能
-      let startX, moveX;
-      container.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-      });
-
-      container.addEventListener('touchmove', (e) => {
-        moveX = e.touches[0].clientX;
-      });
-
-      container.addEventListener('touchend', () => {
-        const diff = startX - moveX;
-        if (Math.abs(diff) > 50) { // 滑动距离超过50px才触发
-          if (diff > 0 && currentIndex < items.length - 1) {
-            showItem((currentIndex + 1) %9);
-          } else if (diff < 0 && currentIndex > 0) {
-            showItem((currentIndex - 1)%9);
-          }
-        }
-      });
-    });
-  </script>
+ 
 </body>
 
 </html>
