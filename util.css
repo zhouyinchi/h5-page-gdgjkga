@@ -51,8 +51,8 @@ body {
 }
 
 .item-container span {
-    width: min(70vw,286.3px);
-    height: min(47vw,192.23px);
+    width: min(70vw, 286.3px);
+    height: min(47vw, 192.23px);
     background-image: url(assets2/item-bg.jpeg);
     background-size: 100%;
     /* margin: auto 15vw; */
@@ -66,14 +66,46 @@ body {
     display: FLEX;
     align-items: center;
     justify-content: center;
-    transform: translateX(min(15vw,61.35px));
+    transform: translateX(min(15vw, 61.35px));
 }
 
 
 .item-wrapper {
     display: flex;
-    gap: min(30vw,122.7px);
+    gap: min(30vw, 122.7px);
     transition: transform 0.3s ease;
+}
+
+.blocks-container {
+    position: absolute;
+    width:90%;
+    margin: auto;
+    top: calc(2rem + 12vh);
+    left:5%;
+    height: calc(88vh - 4rem);
+    overflow: auto;
+}
+
+.form-container {
+    box-sizing: border-box;
+    margin: 1rem 0;
+    overflow: hidden;
+    width: 90%;
+    height: 55vh;
+    transform: translateX(5%);
+    /* border-image: url(assets2/item-bg.jpeg) 20% 20% 20% 20%; */
+    background-color: rgb(245, 232, 216);
+    border: 2rem double;
+    border-image: url(assets2/item-bg.jpeg) 111;
+}
+.form-title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.form-btn{
+    background-size:cover;
+    background-image: url(assets2/btn.png);
 }
 
 /* 容器属性类 */
@@ -167,4 +199,3 @@ body {
 .pd-h-20 {
     padding: 0 20px;
 }
-
