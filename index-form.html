@@ -50,11 +50,20 @@
           <div class="form-title">基本信息</div>
           <div class="form-btn">开始测算</div>
           <div class="form-btn">返回主页</div>
-          <img src="assets2/btn.png" />
           <form>
-            <input type="radio" id="html" name="gender" value="man">
+            <div class="radio-wrapper">
+              <input type="radio" id="html" name="gender" value="man">
+              <div class="fake-radio">
+                <div class="checked-marker"></div>
+              </div>
+            </div>
             <label for="man">男</label>
-            <input type="radio" id="css" name="gender" value="woman">
+            <div class="radio-wrapper">
+              <input type="radio" id="css" name="gender" value="woman">
+              <div class="fake-radio">
+                <div class="checked-marker"></div>
+              </div>
+            </div>
             <label for="woman">女</label>
           </form>
         </div>
