@@ -1,5 +1,5 @@
 body {
-    background-color: #0F1641;
+    background-color: #f5ead8;
     padding: 0;
     margin: 0;
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .page-bg {
-    background-image: url("assets/header-bg.jpg");
+    background-image: url("assets2/header-bg.jpeg");
     margin: 0;
     padding: 0;
     height: 90vh;
