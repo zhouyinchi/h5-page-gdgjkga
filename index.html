@@ -69,7 +69,23 @@
             </div>
           </div>
         </div>
-        <label for="name">生辰:</label>
+        <div class="flex flex-row flex-between"><label for="name">生辰:</label>
+          <div class="radio-btn-container">
+            <div class="radio-wrapper radio-btn-wrapper" >
+              <input type="radio" name="datetype" value="normal" />
+              <div class="form-radio-btn" for="woman">
+                公历
+              </div>
+            </div>
+            <div class="radio-wrapper radio-btn-wrapper">
+              <input type="radio" name="datetype" value="normal" />
+              <div class="form-radio-btn" for="woman">
+                农历
+              </div>
+            </div>
+
+          </div>
+        </div>
         <input type="text" id="name" name="name" required />
       </div>
 
