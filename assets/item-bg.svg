@@ -1,0 +1,29 @@
+<svg width="358" height="353" viewBox="0 0 358 353" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path d="M0 12C0 5.37258 5.37258 0 12 0H179H330.761L346 0C352.627 0 358 5.37258 358 12V341C358 347.627 352.627 353 346 353H12C5.37259 353 0 347.627 0 341V12Z" fill="#363EA3"/>
+    <mask id="mask0_1_6422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="358" height="353">
+    <path d="M0 12C0 5.37258 5.37258 0 12 0H179H330.761H346C352.627 0 358 5.37258 358 12V341C358 347.627 352.627 353 346 353H12C5.37259 353 0 347.627 0 341V12Z" fill="url(#paint0_linear_1_6422)"/>
+    </mask>
+    <g mask="url(#mask0_1_6422)">
+    <path d="M7.66281 6.28394C10.8316 6.73713 14.7737 8.5206 14.6118 13.613C9.54176 12.888 7.88208 9.71971 7.66281 6.28394Z" fill="#75ACFF"/>
+    <path d="M21.7176 22.4601C24.4106 22.8452 27.7608 24.3609 27.6232 28.6887C23.3144 28.0726 21.9039 25.38 21.7176 22.4601Z" fill="#75ACFF"/>
+    <path d="M356.33 11.2793H23.7529" stroke="#75ACFF" stroke-width="2"/>
+    <path d="M19.5691 16.7135C20.4838 18.3377 22.3132 18.8017 24.1426 17.8737C26.9915 16.4286 25.972 11.6093 22.9992 10.6812C20.0265 9.7532 17.7398 10.2172 14.3096 12.7694C11.3078 15.0029 9.73607 18.5696 10.422 21.3538C11.1945 24.4889 14.386 25.9939 17.0537 23.6739C18.121 22.7458 18.4258 19.9617 16.5965 18.8017" stroke="#75ACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.8194 420.52L11.8193 23.2402" stroke="#75ACFF" stroke-width="2"/>
+    <g opacity="0.4">
+    <path d="M14.7087 195.607C302.047 174.623 460.627 -4.978 504 -92.1554L46.2759 -118C-83.9708 -4.72085 -272.63 216.591 14.7087 195.607Z" fill="#5EFFF5" style="mix-blend-mode:overlay"/>
+    </g>
+    <g opacity="0.9">
+    <rect x="-27.8976" y="-60.6801" width="356.962" height="206.44" fill="url(#pattern0_1_6422)" style="mix-blend-mode:overlay"/>
+    </g>
+    </g>
+    <defs>
+    <pattern id="pattern0_1_6422" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <use xlink:href="#image0_1_6422" transform="matrix(0.00145674 0 0 0.00251889 -0.00111729 0)"/>
+    </pattern>
+    <linearGradient id="paint0_linear_1_6422" x1="-8.30145" y1="-16.0573" x2="191.015" y2="167.673" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4056CC"/>
+    <stop offset="1" stop-color="#4056CC" stop-opacity="0"/>
+    </linearGradient>
+    </defs>
+    </svg>
+    
