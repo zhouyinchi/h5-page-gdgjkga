@@ -97,6 +97,7 @@ marquee {
     height: 100%;
     cursor: pointer;
     opacity: 0;
+    z-index: 2;
 }
 
 .radio-wrapper.radio-btn-wrapper {
@@ -226,6 +227,11 @@ marquee {
     line-height: 3rem;
     padding-left: .875rem;
     box-sizing: border-box;
+}
+.form-container input[type="radio"] {
+    outline: none;
+    appearance: none;
+    margin:0;
 }
 
 .form-agreement label {
