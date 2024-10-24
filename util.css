@@ -33,6 +33,30 @@ body {
 
 .page-bg2 {
     background-image: url('assets/header2-bg.jpg');
+    overflow: hidden;
+}
+
+.page-bg2::before {
+    background-image: url('assets/icon-cloud-left.jpg');
+    background-size: cover;
+    top: 26.125rem;
+    left: 0;
+    width: 86px;
+    height: 80px;
+    position: absolute;
+    content: '';
+}
+
+.page-bg2::after {
+    background-image: url('assets/icon-cloud-right.jpg');
+    background-size: cover;
+    overflow: hidden;
+    width: 86px;
+    height: 80px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    content: '';
 }
 
 .page-broadcast {
@@ -114,7 +138,7 @@ marquee {
     width: 5.5625rem;
     overflow: hidden;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-bottom: .75rem;
 }
 
@@ -159,7 +183,7 @@ marquee {
 }
 
 .radio-wrapper input+.form-radio-btn {
-    color: white; 
+    color: white;
     border: none;
     height: 1.5rem;
     width: 2.625rem;
@@ -228,10 +252,11 @@ marquee {
     padding-left: .875rem;
     box-sizing: border-box;
 }
+
 .form-container input[type="radio"] {
     outline: none;
     appearance: none;
-    margin:0;
+    margin: 0;
 }
 
 .form-agreement label {
@@ -243,12 +268,12 @@ marquee {
 
 .result-container {
     box-sizing: border-box;
-    background-image: linear-gradient(135deg, rgba(136, 112, 203, 0.9), rgba(50, 35, 89, 0.9), rgba(36, 34, 86, .9), rgba(84, 82, 154, .9));
+    background-image: linear-gradient(145deg, rgba(87, 41, 116, .7) -2.871%, rgba(49, 30, 105, .7) 18.206%, rgba(54, 62, 163, .7) 90.472%, rgba(64, 72, 177, .7) 101.326%);
     width: 90%;
     margin-left: 5%;
     margin-top: 8rem;
     border-radius: .5rem;
-    padding: .8rem;
+    padding: 1rem;
 }
 
 .result-base {
@@ -261,14 +286,14 @@ marquee {
 .result-base-image {
     height: 1.625rem;
     width: 8rem;
-    margin: 1rem auto;
+    margin: 0.3125rem auto;
     background-image: url('assets/result-base.svg');
 }
 
 .result-base-info {
     font-size: .875rem;
     margin: 0;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
 }
 
@@ -277,7 +302,7 @@ marquee {
     height: 1.625rem;
     background-image: url(assets/result-five.svg);
     background-repeat: no-repeat;
-    margin: 2rem auto 1rem;
+    margin: 2.25rem auto 1rem;
     color: white;
     text-align: center;
     font-size: 1.25rem;
@@ -291,7 +316,7 @@ marquee {
     width: 90%;
     margin: auto;
     border-radius: .5rem;
-    padding: .8rem;
+    padding: 1rem;
 }
 
 .result-title-icon {
@@ -301,6 +326,90 @@ marquee {
     margin: auto;
     height: 3rem;
     width: 3rem;
+}
+
+.result-title-other {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: left;
+    text-transform: capitalize;
+    margin-left: 5%;
+    margin-top: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.result-other-container {
+    width: 90%;
+    height: 4.5rem;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.result-other-icon {
+    border-radius: 8px;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: rgb(255, 255, 255);
+}
+
+.result-other-content {
+    flex: 1;
+    margin-left: 0.75rem;
+}
+
+.result-other-des1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.result-other-des2 {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.5rem;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.result-other-jump {
+    width: 5rem;
+    height: 2rem;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 28px;
+    text-align: center;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 2rem;
+    backdrop-filter: blur(10.4px);
+}
+
+.float-btn {
+    position: absolute;
+    z-index: 11;
+    width: max-content;
+    padding-right: 0.625rem;
+    height: 32px;
+    left: 16px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 85vh;
+    border-radius: 28px;
+    backdrop-filter: blur(10.4px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.float-btn-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-image: url(assets/icon-back.svg);
+
 }
 
 .fire {
