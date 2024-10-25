@@ -113,6 +113,9 @@ body {
 .result-tabs-container {
     overflow: auto;
     margin: 0 1rem;
+    color: white;
+    top:0;
+    background-color: var(--primary-bg);
 }
 
 .result-tabs-container::-webkit-scrollbar {

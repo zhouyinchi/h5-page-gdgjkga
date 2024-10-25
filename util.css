@@ -244,9 +244,13 @@ marquee {
 
 .form-container input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.4);
+    color:rgba(255, 255, 255, 0.4);
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.25rem;
+}
+.form-container input[type="text"].danger::placeholder {
+    color:#FF3567;
 }
 
 .form-container>label:first-of-type {

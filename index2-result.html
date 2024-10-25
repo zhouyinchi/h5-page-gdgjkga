@@ -49,10 +49,23 @@
         </div>
       </div>
       <div class="result-grid-item grid-item-normal">
-
+        <div class="content"></div> 
+        <div class="bottom">
+          偶身宫
+        </div>
       </div>
-      <div class="result-grid-item grid-item-normal"></div>
-      <div class="result-grid-item grid-item-normal"></div>
+      <div class="result-grid-item grid-item-normal">
+        <div class="content"></div> 
+        <div class="bottom">
+          偶身宫
+        </div>
+      </div>
+      <div class="result-grid-item grid-item-normal">
+        <div class="content"></div> 
+        <div class="bottom">
+          偶身宫
+        </div>
+      </div>
       <div class="result-grid-item grid-item-normal"></div>
       <div class="result-grid-item grid-item-normal"></div>
       <div class="result-grid-item grid-item-normal"></div>
@@ -106,11 +119,19 @@
         </div>
         <div class="result-tab-pane">
           <input type="radio" name="tab" id="tab07" />
-          <label class="tab-item" for="tab07"></label>
+          <label class="tab-item" for="tab07">tab7宫</label>
+        </div>
+        <div class="result-tab-pane">
+          <input type="radio" name="tab" id="tab08" />
+          <label class="tab-item" for="tab08">tab8宫</label>
+        </div>
+        <div class="result-tab-pane">
+          <input type="radio" name="tab" id="tab09" />
+          <label class="tab-item" for="tab09">tab9宫</label>
         </div>
       </div>
     </div>
-    <div class="tab-container ">
+    <div class="tab-container" for="tab01">
       <div class="tab-item-title">
         <div class="tab-icon"></div>
         <div>紫薇星系</div>
@@ -120,7 +141,7 @@
       </p>
 
     </div>
-    <div class="tab-container ">
+    <div class="tab-container"  for="tab01">
       <div class="tab-item-title">
         <div class="tab-icon tab-icon2"></div>
         <div>天府星系
@@ -131,7 +152,7 @@
       </p>
 
     </div>
-    <div class="tab-container ">
+    <div class="tab-container"  for="tab01">
       <div class="tab-item-title">
         <div class="tab-icon tab-icon3"></div>
         <div>辅星详解</div>
@@ -140,6 +161,30 @@
         无辅星详解入宫,暂时没有具体的详解,请参考其他副星的位置及其组合来判断吉凶。结合副星的吉凶属性,综合分析各个宫位的具体情况,才能更准确地做出命理判断。这需要考虑整体星象格局,才能得出更全面的结论。
       </p>
 
+    </div>
+    <div class="tab-container" for="tab02" style="display: none;">
+      02
+    </div>
+    <div class="tab-container" for="tab03" style="display: none;">
+      03
+    </div>
+    <div class="tab-container" for="tab04" style="display: none;">
+      04
+    </div>
+    <div class="tab-container" for="tab05" style="display: none;">
+      05
+    </div>
+    <div class="tab-container" for="tab06" style="display: none;">
+      06
+    </div>
+    <div class="tab-container" for="tab07" style="display: none;">
+      07
+    </div>
+    <div class="tab-container" for="tab08" style="display: none;">
+      06
+    </div>
+    <div class="tab-container" for="tab09" style="display: none;">
+      06
     </div>
 
     <div class="result-title-other">热门推荐</div>
@@ -199,6 +244,18 @@
     <div class="float-btn-icon"></div>
     返回首页
   </div>
+  <script>
+    $(document).ready(function () {
+      $('input[name="tab"]').on('click', function () {
+
+        this.scrollIntoView({behavior:'smooth',block:'nearest',inline:"center"})
+        const inputId = $(this).attr('id');
+        $('.tab-container').css('display', 'none');
+        $(`[for="${inputId}"]`).css('display', 'block');
+      });
+    });
+
+  </script>
 </body>
 
 </html>
