@@ -1,5 +1,12 @@
 body {
-    background-color: #0A0F2C;
+    --primary-bg: #0A0F2C;
+    --radio-bg: rgb(12, 9, 112);
+    --radio-bg-before: linear-gradient(rgba(0, 163, 255, 0.5) 0%, rgba(0, 163, 255, 0) 40%, rgba(0, 163, 255, 0) 76%, rgba(0, 163, 255, 0.29) 100%);
+    --input-bg: rgba(150, 173, 255, 0.3);
+    --form-btn: linear-gradient(90deg, #FE1B56 0%, #4957FF 100%);
+    --bottom-container: linear-gradient(rgba(15, 22, 65, 0), rgba(15, 22, 65, 1), rgb(15, 22, 65, 1));
+    --page-result-bg: url('assets/result-bg.jpg');
+    background-color: var(--primary-bg);
     padding: 0;
     margin: 0;
 }
@@ -32,7 +39,7 @@ body {
 }
 
 .page-bg2 {
-    background-image: url('assets/header2-bg.jpg');
+    background-image: var(--page-result-bg);
     overflow: hidden;
 }
 
@@ -168,7 +175,7 @@ marquee {
     justify-content: center;
     align-items: center;
     font-size: .75rem;
-    background: #0C0970;
+    background: var(--radio-bg);
     color: rgba(255, 255, 255, 1)
 }
 
@@ -179,7 +186,7 @@ marquee {
     position: absolute;
     border-radius: .5rem;
     height: 2.5rem;
-    background: linear-gradient(rgba(0, 163, 255, 0.5) 0%, rgba(0, 163, 255, 0) 40%, rgba(0, 163, 255, 0) 76%, rgba(0, 163, 255, 0.29) 100%);
+    background: var(--radio-bg-before);
 }
 
 .radio-wrapper input+.form-radio-btn {
@@ -206,18 +213,17 @@ marquee {
     justify-content: center;
     align-items: center;
     font-size: .75rem;
-    background: #0C0970;
+    background: var(--radio-bg);
     color: rgba(255, 255, 255, 1)
 }
 
 .form-container {
     box-sizing: border-box;
     margin-top: 10rem;
-    padding-top: 1rem;
     overflow: hidden;
     width: 90%;
     height: max-content;
-    padding: 1.5rem;
+    padding: 2rem 1.375rem 2rem 1.375rem;
     transform: translateX(5%);
     background-image: url(assets/item-bg.svg);
     background-size: cover;
@@ -236,6 +242,13 @@ marquee {
     margin-bottom: .75rem;
 }
 
+.form-container input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
 .form-container>label:first-of-type {
     margin-top: 1rem;
 }
@@ -243,7 +256,8 @@ marquee {
 .form-container input[type="text"] {
     outline: none;
     color: white;
-    background-color: rgba(150, 173, 255, 0.3);
+    background-color: var(--input-bg);
+
     border-radius: .5rem;
     border: none;
     width: 100%;
@@ -466,7 +480,7 @@ marquee {
 .form-btn {
     height: 3rem;
     width: 14.625rem;
-    background: linear-gradient(90deg, #FE1B56 0%, #4957FF 100%);
+    background: var(--form-btn);
     border-radius: 1rem;
     line-height: 3rem;
     text-align: center;
@@ -504,7 +518,7 @@ marquee {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(15, 22, 65, 0), rgba(15, 22, 65, 1), rgb(15, 22, 65, 1));
+    background-image: var(--bottom-container);
 }
 
 .bottom-btn {
@@ -515,7 +529,13 @@ marquee {
     gap: 0;
 }
 
-.form-radio-row {}
+.reminder {
+    margin: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
 
 /* 容器属性类 */
 .flex {
