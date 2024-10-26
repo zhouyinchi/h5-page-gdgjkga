@@ -6,13 +6,14 @@ body {
     --form-btn: linear-gradient(90deg, #FE1B56 0%, #4957FF 100%);
     --bottom-container: linear-gradient(rgba(15, 22, 65, 0), rgba(15, 22, 65, 1), rgb(15, 22, 65, 1));
     --page-result-bg: url('assets/result-bg.jpg');
+    --width:min(100vh *390/740,609px); 
     background-color: var(--primary-bg);
     padding: 0;
     margin: 0;
 }
 
 .root {
-    max-width: 609px;
+    max-width:var(--width);
     height: 100vh;
     margin: auto;
     position: relative;
