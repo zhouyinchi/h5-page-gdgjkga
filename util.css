@@ -6,14 +6,17 @@ body {
     --form-btn: linear-gradient(90deg, #FE1B56 0%, #4957FF 100%);
     --bottom-container: linear-gradient(rgba(15, 22, 65, 0), rgba(15, 22, 65, 1), rgb(15, 22, 65, 1));
     --page-result-bg: url('assets/result-bg.jpg');
-    --width:min(100vh *390/740,609px); 
+    --page-header-bg: url("assets/header-bg.jpg");
+    --page-form-container: url('assets/item-bg.jpg');
+
+    --width: min(100vh *390/740, 609px);
     background-color: var(--primary-bg);
     padding: 0;
     margin: 0;
 }
 
 .root {
-    max-width:var(--width);
+    max-width: var(--width);
     height: 100vh;
     margin: auto;
     position: relative;
@@ -25,7 +28,7 @@ body {
 }
 
 .page-bg {
-    background-image: url("assets/header-bg.jpg");
+    background-image: var(--page-header-bg);
     margin: 0;
     padding: 0;
     height: 90vh;
@@ -139,7 +142,7 @@ marquee {
 
 .radio-btn-container {
     color: white;
-    background-color: #96adff4d;
+    background-color: var(--radio-bg);
     border-radius: .5rem;
     border: none;
     height: 1.625rem;
@@ -153,7 +156,7 @@ marquee {
 
 .radio-wrapper input+.form-switch {
     color: white;
-    background-color: rgba(150, 173, 255, 0.3);
+    background-color: var(--radio-bg);
     border-radius: .5rem;
     height: 2.5rem;
     width: 6.25rem;
@@ -226,7 +229,7 @@ marquee {
     height: max-content;
     padding: 2rem 1.375rem 2rem 1.375rem;
     transform: translateX(5%);
-    background-image: url(assets/item-bg.svg);
+    background-image: var(--page-form-container);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: .5rem;
@@ -245,13 +248,14 @@ marquee {
 
 .form-container input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.4);
-    color:rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.25rem;
 }
+
 .form-container input[type="text"].danger::placeholder {
-    color:#FF3567;
+    color: #FF3567;
 }
 
 .form-container>label:first-of-type {
@@ -321,7 +325,8 @@ marquee {
     height: 1.625rem;
     background-image: url(assets/result-five.svg);
     background-repeat: no-repeat;
-    margin: 2.25rem auto 1rem;
+    background-size: 100% 100%;
+    margin: 2rem auto 1rem;
     color: white;
     text-align: center;
     font-size: 1.25rem;
@@ -540,6 +545,50 @@ marquee {
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.25rem;
+}
+
+.tab-container {
+    margin: 1rem;
+    padding: .75rem;
+    border-radius: 10.38px;
+    background: linear-gradient(157.94deg, rgb(81, 40, 148) 1.8%, rgb(74, 31, 105) 13.947%, rgb(74, 31, 105) 61.874%, rgb(74, 31, 105) 68.859%);
+}
+
+.tab-container .tab-item-title {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.tab-container .tab-item-title .tab-icon {
+    background-image: url(assets/icon-stars.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: .25rem;
+}
+
+.tab-container .tab-item-title .tab-icon2 {
+    background-position: -25px 0;
+    background-size: cover;
+}
+
+.tab-container .tab-item-title .tab-icon3 {
+    background-position: -50px 0;
+    background-size: cover;
+}
+
+.tab-container .tab-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .9)
 }
 
 /* 容器属性类 */

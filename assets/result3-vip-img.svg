@@ -1,0 +1,98 @@
+<svg width="351.980469" height="315.359863" viewBox="0 0 351.98 315.36" fill="none" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <pattern id="pattern_1004_91740" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+            <use xlink:href="#image1004_9174_0" transform="matrix(0.001057,0,0,0.001042,-0.009514,0)" />
+        </pattern>
+        <filter id="filter_1004_9175_dd" x="273.009766" y="0.000000" width="78.970703" height="81.117188"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+            <feOffset dx="0" dy="2.6" />
+            <feGaussianBlur stdDeviation="0" />
+            <feComposite in2="hardAlpha" operator="out" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.14118 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape" />
+        </filter>
+        <filter id="filter_1004_9189_dd" x="0.000000" y="261.013184" width="48.370605" height="50.023193"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+            <feOffset dx="0" dy="2.6" />
+            <feGaussianBlur stdDeviation="0" />
+            <feComposite in2="hardAlpha" operator="out" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.14118 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape" />
+        </filter>
+    </defs>
+    <rect id="Rectangle 279335491" x="34.650391" y="43.359863" rx="8.000000" width="272.000000" height="272.000000"
+        fill="#E0223C" fill-opacity="1.000000" />
+    <rect id="image 6346159" x="46.650391" y="55.359863" rx="8.000000" width="248.000000" height="248.000000"
+        fill="url(#pattern_1004_91740)" fill-opacity="1.000000" />
+    <g filter="url(#filter_1004_9175_dd)">
+        <path id="Vector"
+            d="M308.25 60.32L305.59 59.59C305.2 59.48 304.99 59.05 305.15 58.67L306.55 55.39L309.56 56.22L309.09 59.76C309.04 60.16 308.64 60.43 308.25 60.32L308.25 60.32Z"
+            fill="#DE0035" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M305.59 59.59C305.2 59.48 304.99 59.05 305.15 58.67L306.55 55.39L309.56 56.22L309.09 59.76C309.04 60.16 308.64 60.43 308.25 60.32L308.25 60.32L305.59 59.59Z"
+            stroke="#84062D" stroke-opacity="1.000000" stroke-width="0.780000" />
+        <path id="Vector"
+            d="M316.28 25.79C306.58 11.48 294.17 20.34 293.03 30.23C291.8 41.01 300.15 54.37 307.87 56.48C315.59 58.59 329.59 51.35 334.02 41.45C338.08 32.36 331.91 18.41 316.28 25.79Z"
+            fill="#FF002C" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector" d="M313.7 27.78C318.64 23.31 327.93 21.53 332.55 27.53C326.17 23.15 320.18 24.9 313.7 27.78Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M316.42 26.21C312.16 20.54 305.55 16.66 299.14 21.62C291.64 27.54 293.34 38.07 296.91 45.81C292.72 39.15 290.6 29.39 296.13 22.82C302.84 15 311.79 18 316.42 26.21Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M297.39 47.1C300.83 52.38 303.96 55.41 307.87 56.48C315.59 58.59 329.59 51.35 334.01 41.45C328.37 49.71 309.93 58.06 297.39 47.1L297.39 47.1Z"
+            fill="#DE0035" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M293.03 30.23C291.8 41.01 300.15 54.37 307.87 56.48C315.59 58.59 329.59 51.35 334.02 41.45C338.08 32.36 331.91 18.41 316.28 25.79C306.58 11.48 294.17 20.34 293.03 30.23Z"
+            stroke="#84062D" stroke-opacity="1.000000" stroke-width="0.780000" />
+        <path id="Vector" d="M313.75 27.74C315.1 26.63 316.28 25.79 317.66 25.19" stroke="#84062D"
+            stroke-opacity="1.000000" stroke-width="0.780000" stroke-linecap="round" />
+        <path id="Vector" d="M331.56 34.81C330.96 37.21 329.25 35.9 328.43 34.63C321.4 23.69 333.61 26.68 331.56 34.81Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M329.93 38.8C330.58 39.13 330.76 40.11 330.32 40.97C329.87 41.83 328.98 42.25 328.33 41.92C327.67 41.58 327.5 40.61 327.94 39.75C328.38 38.89 329.27 38.46 329.93 38.8Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="evenodd" />
+        <path id="Vector" d="M309.32 57.78C308.14 57.67 307.01 57.36 305.93 56.85" stroke="#84062D"
+            stroke-opacity="1.000000" stroke-width="0.780000" stroke-linecap="round" />
+    </g>
+    <g filter="url(#filter_1004_9189_dd)">
+        <path id="Vector"
+            d="M31.37 300.19L33.42 299.05C33.72 298.88 33.81 298.49 33.6 298.21L31.78 295.78L29.46 297.06L30.56 299.89C30.68 300.22 31.06 300.35 31.37 300.19L31.37 300.19Z"
+            fill="#FF002C" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M33.42 299.05C33.72 298.88 33.81 298.49 33.6 298.21L31.78 295.78L29.46 297.06L30.56 299.89C30.68 300.22 31.06 300.35 31.37 300.19L31.37 300.19L33.42 299.05Z"
+            stroke="#84062D" stroke-opacity="1.000000" stroke-width="0.780000" />
+        <path id="Vector"
+            d="M17.81 273.28C22.94 259.51 34.97 264.34 37.89 272.28C41.08 280.93 36.86 293.64 30.91 296.94C24.96 300.24 11.94 297.06 6.3 289.78C1.12 283.08 3.41 270.32 17.81 273.28Z"
+            fill="#FF002C" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector" d="M20.28 274.38C14.97 271.63 7.56 272.27 4.76 277.82C9.15 272.92 14.35 273.3 20.28 274.38Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M17.77 273.66C20.15 268.12 24.83 263.59 31.12 266.4C38.5 269.78 39.21 278.82 37.82 285.92C39.94 279.58 39.73 271.1 33.85 266.78C26.74 261.67 19.95 265.95 17.77 273.66Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M37.68 287.09C35.9 292.14 33.93 295.27 30.91 296.94C24.96 300.24 11.94 297.06 6.3 289.78C12.62 295.47 29.52 298.65 37.68 287.09L37.68 287.09Z"
+            fill="#DE0035" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M37.89 272.28C41.08 280.93 36.86 293.64 30.91 296.94C24.96 300.24 11.94 297.06 6.3 289.78C1.12 283.08 3.41 270.32 17.81 273.28C22.94 259.51 34.97 264.34 37.89 272.28Z"
+            stroke="#84062D" stroke-opacity="1.000000" stroke-width="0.780000" />
+        <path id="Vector" d="M20.28 274.38C18.95 273.74 17.8 273.28 16.55 273.06" stroke="#84062D"
+            stroke-opacity="1.000000" stroke-width="0.780000" stroke-linecap="round" />
+        <path id="Vector" d="M6.99 283.79C7.97 285.66 9.12 284.24 9.54 283.02C13.15 272.57 3.67 277.49 6.99 283.79Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="nonzero" />
+        <path id="Vector"
+            d="M9.14 286.76C8.67 287.17 8.72 288.01 9.26 288.63C9.79 289.25 10.61 289.43 11.09 289.02C11.56 288.61 11.51 287.77 10.98 287.15C10.44 286.53 9.62 286.35 9.14 286.76Z"
+            fill="#FF4A69" fill-opacity="1.000000" fill-rule="evenodd" />
+        <path id="Vector" d="M29.97 298.31C30.93 297.97 31.8 297.5 32.59 296.86" stroke="#84062D"
+            stroke-opacity="1.000000" stroke-width="0.780000" stroke-linecap="round" />
+    </g>
+</svg>
