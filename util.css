@@ -9,10 +9,15 @@ body {
     --page-header-bg: url("assets/header-bg.jpg");
     --page-form-container: url('assets/item-bg.jpg');
 
-    --width: min(100vh *390/740, 609px);
+    --width: max(min(100vh *390/740, 609px),300px);
     background-color: var(--primary-bg);
     padding: 0;
     margin: 0;
+}
+@media screen and (max-width:609px){
+    body{
+        --width:100vw;
+    }
 }
 
 .root {
