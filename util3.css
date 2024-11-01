@@ -116,6 +116,6 @@ body {
     filter: blur(10px);
 }
 
-[vip-tab] {
+[for="vip-tab"] {
     display: none;
 }
