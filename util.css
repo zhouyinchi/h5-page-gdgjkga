@@ -605,6 +605,25 @@ marquee {
     color: rgba(255, 255, 255, .9)
 }
 
+.result-drop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 4.25rem;
+    line-height: 1.25rem;
+    color: white;
+    font-size: 0.75rem;
+    margin: 1.125rem 0 1rem 1rem;
+}
+
+.result-drop .down {
+    background-image: url(assets/icon-drop.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 12px;
+}
+
 /* 容器属性类 */
 .flex {
     display: flex;

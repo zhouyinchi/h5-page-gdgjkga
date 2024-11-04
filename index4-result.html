@@ -75,6 +75,32 @@
         无紫微星入宫,暂时没有具体的详解,请参考其他副星的位置及其组合来判断吉凶。结合副星的吉凶属性,综合分析各个宫位的具体情况,才能更准确地做出命理判断。这需要考虑整体星象格局,才能得出更全面的结论。
       </p>
     </div>
+    <div for="month-tab">
+      <div class="result-drop">
+        <span>1月运势</span>
+        <div class="down"></div>
+      </div>
+    </div>
+
+
+    <div class="tab-result tab-container" for="month-tab">
+      <div class="tab-item-title">
+        <div class="tab-icon"></div>
+        <div>1月事业运势</div>
+      </div>
+      <p class="tab-content">
+        无紫微星入宫,暂时没有具体的详解,请参考其他副星的位置及其组合来判断吉凶。结合副星的吉凶属性,综合分析各个宫位的具体情况,才能更准确地做出命理判断。这需要考虑整体星象格局,才能得出更全面的结论。
+      </p>
+    </div>
+    <div class="tab-result tab-container" for="month-tab">
+      <div class="tab-item-title">
+        <div class="tab-icon"></div>
+        <div>1月财运运势</div>
+      </div>
+      <p class="tab-content">
+        无紫微星入宫,暂时没有具体的详解,请参考其他副星的位置及其组合来判断吉凶。结合副星的吉凶属性,综合分析各个宫位的具体情况,才能更准确地做出命理判断。这需要考虑整体星象格局,才能得出更全面的结论。
+      </p>
+    </div>
 
     <div class="result-title-other">热门推荐</div>
     <div class="result-other-container">
@@ -131,6 +157,20 @@
     <div class="float-btn-icon"></div>
     返回首页
   </div>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.result-tab-item').on('click', function () {
+        const tabId = $(this).attr('id');
+        $('.result-tab-item').removeClass('checked-tab')
+        $(this).addClass('checked-tab')
+        $('.tab-result').css('display', 'none');
+        $(`[for="${tabId}"]`).css('display', 'block');
+      });
+    });
+
+  </script>
 </body>
 
 </html>

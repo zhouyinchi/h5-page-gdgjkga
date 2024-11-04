@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 p {
     margin: 0;
     font-size: 0.875rem;
@@ -100,4 +104,8 @@ p {
 .tab-container {
     border-radius: 12px;
     background: rgba(23, 79, 143, .8);
+}
+
+[for="month-tab"] {
+    display: none;
 }
