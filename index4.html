@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>生辰精算</title> -->
+    <link href="util.css" rel="stylesheet" />
+    <link href="util4.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="page-bg"></div>
+      <div class="page-broadcast">
+        <img
+          class="icon-broadcast"
+          style="display: inline; width: 17px; height: 16px; margin: 0.5rem"
+          src="assets/icon-broadcast.svg"
+        />
+        <marquee>
+          本站所有数据仅供娱乐用途，请勿用于封建迷信和违法用途。本站拒绝为未成年人提供服务，如未成年人使用且造成不利影响，一切后果由监护人自行承担！本站将严格保护您的个人信息，也不会存储用户的测算结果。
+        </marquee>
+      </div>
+      <div class="page-title">
+        <div class="h3 pd-l-5">未来运势预测</div>
+        <div class="h4 pd-l-5">探索未来运势，开启新旅程</div>
+      </div>
+      <form>
+        <div class="form-container">
+          <label for="name">姓名:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="请输入你的姓名（汉字）"
+          />
+          <label for="name">姓别:</label>
+
+          <div class="form-item gender-item flex">
+            <div class="radio-wrapper">
+              <input type="radio" name="gender" value="man" />
+              <div class="form-switch" for="woman">
+                <svg
+                  width="36"
+                  height="20"
+                  viewBox="0 0 36 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.388 10.968H30.252C30.216 11.28 30.168 11.58 30.108 11.844H34.668C34.668 13.644 34.512 14.808 34.224 15.312C33.936 15.792 33.396 16.044 32.628 16.044C32.088 16.044 31.644 16.032 31.284 16.008L31.068 15.18C31.62 15.228 32.124 15.252 32.58 15.252C33.204 15.228 33.552 14.952 33.648 14.424C33.732 13.872 33.78 13.284 33.78 12.66H29.868C29.616 13.344 29.268 13.932 28.824 14.412C28.08 15.18 26.832 15.792 25.104 16.236L24.768 15.42C26.316 15.06 27.432 14.532 28.128 13.86C28.464 13.524 28.74 13.116 28.944 12.66H25.152V11.844H29.22C29.292 11.556 29.34 11.268 29.388 10.968ZM25.92 5.64H34.2V10.536H25.92V5.64ZM33.348 9.768V8.496H30.492V9.768H33.348ZM30.492 7.728H33.348V6.444H30.492V7.728ZM29.652 9.768V8.496H26.772V9.768H29.652ZM26.772 7.728H29.652V6.444H26.772V7.728Z"
+                    fill="currentColor"
+                  />
+                  <g clip-path="url(#clip0_1_6441)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.8839 8.86611C9.12652 7.10875 6.27728 7.10875 4.51992 8.86611C2.76256 10.6235 2.76256 13.4727 4.51992 15.2301C6.27728 16.9874 9.12653 16.9874 10.8839 15.2301C12.6412 13.4727 12.6412 10.6235 10.8839 8.86611ZM3.81282 8.159C5.9433 6.02851 9.38679 6.01126 11.5385 8.10724L11.237 7.80572L14.9796 4.06319L12.6517 4.06319C12.3756 4.06319 12.1517 3.83933 12.1517 3.56319C12.1517 3.28705 12.3756 3.06319 12.6517 3.06319L15.6873 3.06319C16.2395 3.06319 16.6873 3.5109 16.6873 4.06319L16.6873 7.09872C16.6873 7.37487 16.4634 7.59872 16.1873 7.59872C15.9111 7.59872 15.6873 7.37487 15.6873 7.09872L15.6873 4.7697L11.9441 8.51282L11.6428 8.21145C13.7387 10.3632 13.7215 13.8067 11.591 15.9372C9.44311 18.0851 5.9607 18.0851 3.81282 15.9372C1.66493 13.7893 1.66493 10.3069 3.81282 8.159Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_6441">
+                      <rect width="20" height="20" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="radio-wrapper">
+              <input type="radio" name="gender" value="woman" />
+              <div class="form-switch" for="woman">
+                <svg
+                  width="36"
+                  height="20"
+                  viewBox="0 0 36 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.696 7.908H27.912C28.296 6.996 28.668 6.072 29.028 5.136L29.904 5.4C29.556 6.288 29.22 7.128 28.896 7.908H35.304V8.736H33.252C32.928 10.368 32.292 11.736 31.344 12.852C31.536 12.948 31.716 13.056 31.896 13.164C33.048 13.848 34.14 14.64 35.172 15.528L34.524 16.164C33.42 15.228 32.256 14.388 31.008 13.656C30.912 13.596 30.816 13.548 30.72 13.5C29.352 14.772 27.516 15.66 25.2 16.164L24.816 15.336C26.964 14.892 28.656 14.136 29.904 13.056C28.848 12.516 27.612 11.988 26.196 11.484C26.664 10.572 27.108 9.66 27.54 8.736H24.696V7.908ZM30.552 12.432C31.488 11.4 32.1 10.176 32.388 8.736H28.536C28.14 9.6 27.756 10.392 27.396 11.112C28.596 11.544 29.652 11.976 30.552 12.432Z"
+                    fill="currentColor"
+                  />
+                  <circle cx="10" cy="6.5" r="5" stroke="currentColor" />
+                  <path d="M10 12L10 18" stroke="currentColor" />
+                  <path
+                    d="M7.5 16L9.64645 18.1464C9.84171 18.3417 10.1583 18.3417 10.3536 18.1464L12.5 16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row flex-between">
+            <label for="name">生辰:</label>
+            <div class="radio-btn-container">
+              <div class="radio-wrapper radio-btn-wrapper">
+                <input type="radio" name="datetype" value="normal" />
+                <div class="form-radio-btn" for="woman">公历</div>
+              </div>
+              <div class="radio-wrapper radio-btn-wrapper">
+                <input type="radio" name="datetype" value="normal" />
+                <div class="form-radio-btn" for="woman">农历</div>
+              </div>
+            </div>
+          </div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="请选择你的出生日期"
+          />
+        </div>
+
+        <div class="form-btn">开始测算</div>
+        <div class="form-item flex flex-row flex-center form-agreement">
+          <input type="checkbox" id="horns" name="horns" />
+          <label for="horns">已阅读并同意 用户协议 和 隐私政策</label>
+        </div>
+      </form>
+      <div class="icp">粤ICP备2024311378号</div>
+    </div>
+  </body>
+</html>

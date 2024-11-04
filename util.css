@@ -9,7 +9,7 @@ body {
     --page-header-bg: url("assets/header-bg.jpg");
     --page-form-container: url('assets/item-bg.jpg');
 
-    --width: min(100vh *390/740, 609px);
+    --width: min(100vh *390/740, 809px);
     background-color: var(--primary-bg);
     padding: 0;
     margin: 0;
@@ -143,7 +143,7 @@ marquee {
 .radio-btn-container {
     color: white;
     background-color: var(--radio-bg);
-    border-radius: .5rem;
+    border-radius: .25rem;
     border: none;
     height: 1.625rem;
     width: 5.5625rem;
@@ -156,7 +156,7 @@ marquee {
 
 .radio-wrapper input+.form-switch {
     color: white;
-    background-color: var(--radio-bg);
+    background-color: var(--input-bg);
     border-radius: .5rem;
     height: 2.5rem;
     width: 6.25rem;
@@ -174,7 +174,7 @@ marquee {
     width: 6.25rem;
     border: none;
     border-radius: .5rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: .5px solid rgba(255, 255, 255, 0.5);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -202,6 +202,7 @@ marquee {
     justify-content: center;
     align-items: center;
     font-size: .75rem;
+    background: var(--input-bg);
     color: rgba(255, 255, 255, 0.4)
 }
 
@@ -212,13 +213,20 @@ marquee {
     width: 2.625rem;
     border: none;
     border-radius: .5rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: .5px solid rgba(255, 255, 255, 0.5);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: .75rem;
     background: var(--radio-bg);
     color: rgba(255, 255, 255, 1)
+}
+
+.radio-btn-wrapper input:checked+.form-radio-btn,
+.radio-btn-wrapper input:focus+.form-radio-btn {
+    border: none;
+    border-radius: .25rem;
+    background: var(--primary-bg);
 }
 
 .form-container {
@@ -562,6 +570,7 @@ marquee {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
+    margin-bottom: 0.75rem;
 }
 
 .tab-container .tab-item-title .tab-icon {
