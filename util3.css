@@ -112,9 +112,6 @@ body {
     top: 2rem;
 }
 
-.result-filter {
-    filter: blur(10px);
-}
 
 [for="vip-tab"] {
     display: none;

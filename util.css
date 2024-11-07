@@ -319,6 +319,10 @@ marquee {
     margin-top: .5rem;
 }
 
+.result-filter {
+    filter: blur(10px);
+}
+
 .result-base-image {
     height: 1.625rem;
     width: 8rem;
@@ -652,6 +656,10 @@ marquee {
 
 .flex-between {
     justify-content: space-between;
+    align-items: center;
+}
+
+.flex-align-center {
     align-items: center;
 }
 

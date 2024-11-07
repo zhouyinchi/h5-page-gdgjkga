@@ -1,0 +1,117 @@
+body {
+    --primary-bg: #011F2B;
+    --radio-bg: rgb(12, 9, 112);
+    --radio-bg-before: linear-gradient(rgba(0, 163, 255, 0.5) 0%, rgba(0, 163, 255, 0) 40%, rgba(0, 163, 255, 0) 76%, rgba(0, 163, 255, 0.29) 100%);
+    --input-bg: rgba(150, 173, 255, 0.3);
+    --form-btn: linear-gradient(90.00deg, rgb(9, 247, 255) 0.01%, rgb(9, 173, 255) 100%);
+    --bottom-container: linear-gradient(rgba(15, 22, 65, 0), rgba(15, 22, 65, 1), rgb(15, 22, 65, 1));
+    --page-result-bg: url('assets/result-bg5.png');
+    --page-header-bg: url("assets/header-bg5.png");
+    --page-form-container: url('assets/item-bg5.svg');
+    --width: max(min(100vh *390/740, 809px), 300px);
+    background-color: var(--primary-bg);
+    padding: 0;
+    margin: 0;
+}
+
+.page-bg {
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.form-container {
+    padding: 0;
+    position: relative;
+    height: 305px;
+    margin: 10rem auto 0 auto;
+    width: calc(100% - 2rem);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: unset;
+}
+
+#filesLease {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.form-container img {
+    position: absolute;
+    z-index: 11;
+    width: 240px;
+    max-width: 60%;
+    border-radius: 0.75rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.result-container {
+    border-radius: 0.75rem;
+    background-color: #193942;
+    background-image: unset;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.result-container .result-base.result-base-image {
+    background-image: url(assets/result5-base.svg);
+    background-size: 100% 100%;
+    width: 90%;
+    position: absolute;
+    height: 56px;
+    transform: translate(-1rem, -3.5rem);
+    z-index: -1;
+    margin: 0;
+
+}
+
+.result-container img {
+    width: 180px;
+    height: 180px;
+    margin: 12px;
+}
+
+.result-normal-container {
+    background: rgb(25, 57, 66)
+}
+
+strong {
+    color: #65F6FF;
+}
+
+.result-tab {
+    margin: 1rem 1.25rem;
+    height: 2.875rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 13px;
+}
+
+.result-tab-item {
+    height: 2.875rem;
+    line-height: 2.875rem;
+    font-weight: 700;
+    flex: 1;
+    color: rgb(0, 255, 242);
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.52px solid rgb(37, 244, 238);
+    border-radius: 8px;
+
+}
+
+.checked-tab {
+    color: white;
+    background-size: 100% 100%;
+    background-image: url(assets/resutl5-btn.svg);
+}
+
+.result-label {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+[for="month-tab"] {
+    display: none;
+}
