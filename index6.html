@@ -27,7 +27,7 @@
     </div>
     <form>
       <div class="form-container">
-        <img src="assets/pic.png" style="pointer-events: none;"></img>
+        <img id="fileShow" src="assets/pic.png" style="pointer-events: none;display: none;"></img>
         <input id="filesLease" name="filesLease" type="file" multiple="">
       </div>
 
@@ -39,6 +39,21 @@
     </form>
     <div class="icp">粤ICP备2024311378号</div>
   </div>
+  <script>
+    $(document).ready(function () {
+      $('#filesLease').on('change', function (e) {
+        var file = e.target.files[0]
+        console.log(file)
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            $('#fileShow').attr('src', e.target.result).show();
+          };
+          reader.readAsDataURL(file);
+        }
+      })
+    })
+  </script>
 </body>
 
 </html>
